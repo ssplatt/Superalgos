@@ -1,0 +1,29 @@
+version: "3"
+services:
+  swag:
+    image: ghcr.io/linuxserver/swag
+    container_name: swag
+    cap_add:
+      - NET_ADMIN
+    environment:
+      PUID:
+      PGID:
+      TZ:
+      URL:
+      SUBDOMAINS:
+      VALIDATION:
+      CERTPROVIDER:
+      DNSPLUGIN:
+      PROPAGATION:
+      DUCKDNSTOKEN:
+      EMAIL:
+      ONLY_SUBDOMAINS:
+      EXTRA_DOMAINS:
+      STAGING:
+      MAXMINDDB_LICENSE_KEY:
+    volumes:
+      - ./swag/config:/config
+    ports:
+      - '443:443'
+      - '80:80'
+    restart: unless-stopped
