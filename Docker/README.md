@@ -33,12 +33,11 @@ To avoid breaking changes, the `shasum hash` and the `release` tags are the best
 
 ## Using a Secure Web Application Gateway (swag)
 
-- **Exposing Superalgos to the internet will expose you to hackers and must be done with caution. Do so at your own risk. Make sure you understand what you are doing and follow all of the linked documentation to ensure proper configuration.**
-- **These directions are provided for informational purposes only. Use this information at your own risk. This information provided below is not exhaustive.**
-- **Make sure you create a USERNAME and PASSWORD, Superalgos does not have any other means of authentication built-in. Not having authentication means anyone can view the Superalgos application and anything secret that is stored in it (i.e. secrets keys and tokens). Follow current standards for strong passwords.**
-- **Make sure you use a VALID CERTIFICATE for HTTPS encryption. Superalgos does not otherwise encrypt traffic. Traffic that is not encrypted is open to eavesdropping and can leak secrets.**
+Since Superalgos itself does not have encryption or authentication built in, exposing the application to the public internet is not recommended. However, a reverse proxy can be used to encrypt data in transit and provide simple authentication.
 
-[linuxserver/swag](https://github.com/linuxserver/docker-swag) is one method to provide a secure ingress to the Superalgos application over the public internet. `swag` includes [nginx as a reverse proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/), [certbot](https://certbot.eff.org/), and [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) which can be configured to provide password auth (htpasswd), valid certificates for tls/ssl encryption (https), and bad bot or hacker banning.
+**Exposing Superalgos to the internet will expose you to hackers and must be done with caution. Do so at your own risk. These directions are provided for informational purposes only.**
+
+[linuxserver/swag](https://github.com/linuxserver/docker-swag) is one method to provide a secure ingress to the Superalgos application over the public internet. `swag` includes [nginx as a reverse proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/), [certbot](https://certbot.eff.org/), and [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) which can be configured to provide password auth (htpasswd), valid certificates for tls/ssl encryption (https), and the ability to ban bots and/or hackers.
 
 - [View the swag readme for more details and configuration options](https://github.com/linuxserver/docker-swag#readme)
 
@@ -56,4 +55,6 @@ docker-compose exec swag htpasswd -c /config/nginx/.htpasswd <username>
 
 **Configure certbot for ssl/tls encryption (https)**, copy the `template.env` file to `.env` and edit the environment variables in `.env`. Change any other environment variables in `.env` as needed. You will need to own the domain you are trying to create certificates for. You can buy your own domain at websites like [Namecheap](https://www.namecheap.com/), for example.
 
-`swag` configurations will persist to the `swag/config` directory on the local filesystem.
+`swag` configurations will persist to the `swag/` directory on the local filesystem.
+
+The included nginx site configuration, `swag/nginx/site-confs/superalgos`, assumes you will be accessing the application using a subdomain, i.e. https://superalgos.example.com. To make modifications, copy this file to another location and create your own custome configuration.

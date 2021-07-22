@@ -392,6 +392,10 @@ To see console logs you can use `docker logs superalgos -f`
 
 When you're done just exec `docker kill superalgos`
 
+### Option B. Use a `docker-compose` Configuration
+
+Follow the [README](./Docker/README.md) in the Docker directory.
+
 # What is Superalgos?
 
 Superalgos is a platform to automate crypto-trading. It is implemented as a Node JS Client + Web App that runs on your hardware and scales from a single Raspberry Pi to a Trading Farm. Superalgos is **Free** and **Open-Source**.

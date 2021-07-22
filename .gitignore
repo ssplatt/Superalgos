@@ -13,3 +13,9 @@ Projects/Foundations/Icons/Thumbs.db
 node_modules
 launch.json
 .env
+Docker/swag/*
+!Docker/swag/nginx/
+Docker/swag/nginx/*
+!Docker/swag/nginx/site-confs/
+Docker/swag/nginx/site-confs/*
+!Docker/swag/nginx/site-confs/superalgos

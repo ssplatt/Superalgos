@@ -22,7 +22,7 @@ services:
       STAGING:
       MAXMINDDB_LICENSE_KEY:
     volumes:
-      - ./swag/config:/config
+      - ./swag:/config
     ports:
       - '443:443'
       - '80:80'
