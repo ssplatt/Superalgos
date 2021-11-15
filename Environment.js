@@ -5,11 +5,23 @@ if (process.env.PACKAGED_PATH) {
 } else {
     basePath = __dirname
 }
+
+let demo_mode = false
+let demo_mode_host = 'localhost'
+
+if (process.env.DEMO_MODE !== undefined) {
+  demo_mode = (process.env.DEMO_MODE.toLowerCase() === 'true')
+}
+
+if (process.env.DEMO_MODE_HOST !== undefined) {
+  demo_mode_host = process.env.DEMO_MODE_HOST
+}
+
 exports.newEnvironment = function () {
 
     let thisObject = {
-        DEMO_MODE: false,
-        DEMO_MODE_HOST: "super-super-uzzdd68dwm9w-22a320db4ede63aa.elb.us-east-2.amazonaws.com",
+        DEMO_MODE: demo_mode,
+        DEMO_MODE_HOST: demo_mode_host,
         BASE_PATH: basePath,
         WEB_SERVER_URL: 'localhost',
         PLATFORM_WEB_SOCKETS_INTERFACE_PORT: 18041,

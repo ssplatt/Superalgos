@@ -7,11 +7,10 @@ services:
     image: ghcr.io/superalgos/superalgos:latest
     command: ["minMemo"]
     user: "$UID:$GID"
+    environment:
+      DEMO_MODE: 'true'
+      DEMO_MODE_HOST: 'testing-host.testing.network'
     ports:
       - '34248:34248'
       - '18041:18041'
-    volumes:
-      - ../Platform/My-Data-Storage:/app/Platform/My-Data-Storage
-      - ../Platform/My-Log-Files:/app/Platform/My-Log-Files
-      - ../Platform/My-Workspaces:/app/Platform/My-Workspaces
     restart: on-failure
