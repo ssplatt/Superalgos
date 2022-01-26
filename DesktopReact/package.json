@@ -31,7 +31,7 @@
     "babel-preset-react-app": "^10.0.0",
     "bfj": "^7.0.2",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
-    "ccxt": "^1.61.93",
+    "ccxt": "^1.66.23",
     "cors": "^2.8.5",
     "css-loader": "4.3.0",
     "eslint": "^7.11.0",
