@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.1.1",
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
     "@reduxjs/toolkit": "^1.6.2",
     "@svgr/webpack": "5.5.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
