@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.1.1",
-    "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@svgr/webpack": "5.5.0",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
@@ -84,7 +84,7 @@
     "web-vitals": "^1.1.2",
     "web3": "^1.6.1",
     "webpack": "4.44.2",
-    "webpack-dev-server": "3.11.1",
+    "webpack-dev-server": "3.11.3",
     "webpack-manifest-plugin": "2.2.0",
     "workbox-webpack-plugin": "5.1.4",
     "ws": "^8.4.0"
