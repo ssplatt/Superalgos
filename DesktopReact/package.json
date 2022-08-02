@@ -82,7 +82,7 @@
     "url-loader": "4.1.1",
     "util": "^0.12.4",
     "web-vitals": "^1.1.2",
-    "web3": "^1.6.1",
+    "web3": "^1.7.5",
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.1",
     "webpack-manifest-plugin": "2.2.0",
