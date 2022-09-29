@@ -33,7 +33,7 @@
     "@reduxjs/toolkit": "^1.6.2",
     "@slack/web-api": "^6.5.1",
     "axios": "^0.26.0",
-    "ccxt": "^1.61.93",
+    "ccxt": "^1.93.18",
     "child_process": "^1.0.2",
     "discord-api-types": "^0.25.2",
     "discord.js": "^13.3.1",
