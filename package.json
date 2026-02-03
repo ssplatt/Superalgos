@@ -65,14 +65,14 @@
     "ndjson": "^2.0.0",
     "node-fetch": "^2.6.6",
     "node-static": "^0.7.11",
-    "npm": ">=10.3.0",
+    "npm": ">=11.6.1",
     "open": "^8.4.0",
     "pako": "^2.1.0",
     "path": "^0.12.7",
     "pg": "^8.11.0",
     "pm2": "^5.2.2",
     "simple-git": "^3.13.0",
-    "sqlite3": "^5.1.6",
+    "sqlite3": "^5.1.7",
     "telegraf": "^4.11.2",
     "twitter-api-v2": "^1.7.1",
     "util": "^0.12.4",
@@ -80,7 +80,7 @@
     "vite": "^3.2.4",
     "vue": "^3.2.40",
     "vue-router": "^4.1.5",
-    "web3": "^1.6.1",
+    "web3": "^4.0.1",
     "winston": "^3.8.2",
     "winston-daily-rotate-file": "^4.7.1",
     "workbox-webpack-plugin": "^6.5.4",
@@ -89,9 +89,9 @@
     "yargs": "^17.6.2"
   },
   "optionalDependencies": {
-    "@tensorflow/tfjs-node": "^2.8.6",
+    "@tensorflow/tfjs-node": "^3.7.0",
     "electron": "^21.3.1",
-    "electron-builder": "^23.6.0",
+    "electron-builder": "^26.6.0",
     "electron-updater": "^4.6.1"
   },
   "devDependencies": {
