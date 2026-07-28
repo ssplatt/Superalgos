@@ -91,8 +91,8 @@
   "optionalDependencies": {
     "@tensorflow/tfjs-node": "^2.8.6",
     "electron": "^21.3.1",
-    "electron-builder": "^23.6.0",
-    "electron-updater": "^4.6.1"
+    "electron-builder": "^26.15.3",
+    "electron-updater": "^6.8.9"
   },
   "devDependencies": {
     "axios": "^0.18.0",
